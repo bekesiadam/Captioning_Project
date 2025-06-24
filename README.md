@@ -27,6 +27,7 @@ Itt található minden adat:
 - `create_image_embedding.py`: Ezzel lehet modellt választani, aztán a többi kódot futtatni rajta
 - `online_presentation.ipynb`: Leginkább vizualizációk vannak benne
 - `tablazatok.ipynb`: Itt készül minden táblázat
+- `percolation.ipynb`: Egy perkolációs klaszterezést mutat
 
 ---
 
@@ -43,5 +44,6 @@ Mérési eredmények különböző metrikák mentén:
 - `image_top1_similarity.csv`: Legjobb kép-kép pár hasonlósága képenként
 - `inter_class_similarities.json`: Különböző osztályok közötti hasonlóságok
 - `intra_class_similarities.json`: Egyes osztályokon belüli hasonlóságok
+- `image_vs_caption_similarity.csv`: Az egyedi szövegek vs az osztályra vonatkozó szövegek
 
 ---
