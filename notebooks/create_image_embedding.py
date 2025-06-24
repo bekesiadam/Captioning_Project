@@ -10,7 +10,7 @@ model = SiglipModel.from_pretrained("google/siglip-base-patch16-224").to(device)
 processor = SiglipProcessor.from_pretrained("google/siglip-base-patch16-224")
 
 # Képek mappa
-base_path = "C:/Users/Adam/Desktop/applied_ml/dataset/train"
+base_path = "dataset/train" # Itt van: https://www.kaggle.com/datasets/nunenuh/pytorch-challange-flower-dataset
 
 # Képek beolvasása
 image_paths = []
@@ -41,5 +41,5 @@ for img_path, label in tqdm(zip(image_paths, image_labels), total=len(image_path
 
 # Egyesítés és mentés
 image_features = torch.cat(image_features, dim=0)
-torch.save(image_features, "C:/Users/Adam/Desktop/applied_ml/dataset/image_embeddings_siglip.pt")
-torch.save(image_infos, "C:/Users/Adam/Desktop/applied_ml/dataset/image_info_siglip.pt")
+torch.save(image_features, "../data/image_embeddings_siglip.pt")
+torch.save(image_infos, "../data/image_info_siglip.pt")
